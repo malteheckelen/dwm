@@ -18,9 +18,16 @@ static const char col_active[]     = "#457EBC";
 static const char col_dimmed[]     = "#8C8C8C";
 static const char col_black[] = "#2B303B";
 static const char *colors[][3]      = {
+static const unsigned int baralpha = 0xd0;
+static const unsigned int borderalpha = OPAQUE;
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_dimmed, col_black, col_black },
 	[SchemeSel]  = { col_active, col_black,  col_active  },
+};
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
