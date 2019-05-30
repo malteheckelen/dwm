@@ -1548,7 +1548,6 @@ setup(void)
 	sw = DisplayWidth(dpy, screen);
 	sh = DisplayHeight(dpy, screen);
 	root = RootWindow(dpy, screen);
-	drw = drw_create(dpy, screen, root, sw, sh);
 	xinitvisual();
 	drw = drw_create(dpy, screen, root, sw, sh, visual, depth, cmap);
  	if (!drw_fontset_create(drw, fonts, LENGTH(fonts)))
