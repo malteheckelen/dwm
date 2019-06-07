@@ -5,7 +5,7 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "xft:Noto Emoji:size=18", "monospace:size=18" };
+static const char *fonts[]          = { "xft:Noto Emoji:size=22", "monospace:size=18" };
 static const char dmenufont[]       = "monospace:size=18";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -17,18 +17,18 @@ static const char col_foregr[]     = "#E1E1E1";
 static const char col_active[]     = "#457EBC";
 static const char col_dimmed[]     = "#8C8C8C";
 static const char col_black[] = "#2B303B";
-static const unsigned int baralpha = 0xd0;
-static const unsigned int borderalpha = OPAQUE;
+/* static const unsigned int baralpha = 0xd0; */
+/* static const unsigned int borderalpha = OPAQUE; */ 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_dimmed, col_black, col_black },
 	[SchemeSel]  = { col_active, col_black,  col_active  },
 };
-static const unsigned int alphas[][3]      = {
+/* static const unsigned int alphas[][3]      = { */
 	/*               fg      bg        border     */
-	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
-};
+/*	[SchemeNorm] = { OPAQUE, baralpha, borderalpha }, */
+/*	[SchemeSel]  = { OPAQUE, baralpha, borderalpha }, */
+/*}; */
 
 /* tagging */
 /* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
@@ -79,7 +79,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+	{ MODKEY,                       XK_u,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_p,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
